@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solutions</title>
+    <link rel="shortcut icon" href="images/criminal.png" type="image/x-icon" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/6a50de9104.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- TAILWIND + DAISY UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- TAILWIND CONFIG-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              gara: ["EB Garamond"],
+              pop: ["Poppins"],
+            },
+            colors: {
+              "color-prim": "#B68C5A",
+              "color-dark": "#414040",
+              "color-gray": "#707070",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="md:container md:mx-auto px-5 md:px-16">
+      <!-- NAVIGATION BAR -->
+      <div class="navbar px-0 mt-5 py-4 lg:px-10 lg:mt-10">
+        <div class="navbar-start">
+          <div class="flex justify-center">
+            <img src="images/logo2.png" class="p-2" />
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal gap-5 xl:gap-12 text-color-gray">
+            <label
+              tabindex="0"
+              class="btn btn-ghost p-0 hover:bg-transparent font-normal text-[13px] xl:text-[15px]"
+              >Home</label
+            >
+            <div class="dropdown dropdown-hover dropdown-bottom">
+              <label
+                tabindex="0"
+                class="btn btn-ghost p-0 hover:bg-transparent font-normal text-[13px] xl:text-[15px]"
+                >Services<i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow rounded-md bg-color-prim text-white w-52"
+              >
+                <li><a class="hover:text-white">Family Law Matters</a></li>
+                <li>
+                  <a class="hover:text-white">Real Estate Transactions</a>
+                </li>
+                <li>
+                  <a class="hover:text-white">Estate Planning and Probate</a>
+                </li>
+                <li>
+                  <a class="hover:text-white">Consumer Rights and Protection</a>
+                </li>
+                <li><a class="hover:text-white">See More ></a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown dropdown-hover dropdown-bottom">
+              <label
+                tabindex="0"
+                class="btn btn-ghost p-0 hover:bg-transparent font-normal text-[13px] xl:text-[15px]"
+                >Cases<i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow rounded-md bg-color-prim text-white w-52"
+              >
+                <li>
+                  <a class="hover:text-white"
+                    >Public Interest Litigation (PIL)</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white">Successful Client Outcomes</a>
+                </li>
+                <li><a class="hover:text-white">Notable Court Rulings</a></li>
+                <li><a class="hover:text-white">Landmark Appeals</a></li>
+                <li><a class="hover:text-white">See More ></a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown dropdown-hover dropdown-bottom">
+              <label
+                tabindex="0"
+                class="btn btn-ghost p-0 hover:bg-transparent font-normal text-[13px] xl:text-[15px]"
+                >Blog<i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow rounded-md bg-color-prim text-white w-52"
+              >
+                <li><a class="hover:text-white">Latest News in Law</a></li>
+                <li><a class="hover:text-white">Know Your Rights</a></li>
+                <li><a class="hover:text-white">In-Depth Legal Research</a></li>
+                <li><a class="hover:text-white">Explaining Legal Jargon</a></li>
+                <li><a class="hover:text-white">See More ></a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown dropdown-hover dropdown-bottom">
+              <label
+                tabindex="0"
+                class="btn btn-ghost p-0 hover:bg-transparent font-normal text-[13px] xl:text-[15px]"
+                >Contact Us<i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow rounded-md bg-color-prim text-white w-52"
+              >
+                <li><a class="hover:text-white">Ask Legal Questions</a></li>
+                <li><a class="hover:text-white">Contact Client Services</a></li>
+                <li><a class="hover:text-white">Contact Our Attorneys</a></li>
+                <li><a class="hover:text-white">Schedule a Consultation</a></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost lg:hidden rotate-180">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow-xl bg-color-prim rounded-box w-60 text-white"
+            >
+              <li><a class="text-base mb-2 font-semibold">HOME</a></li>
+              <li><a class="text-base mb-2 font-semibold">SERVICES</a></li>
+              <li><a class="text-base mb-2 font-semibold">CASES</a></li>
+              <li><a class="text-base mb-2 font-semibold">BLOGS</a></li>
+              <li><a class="text-base mb-2 font-semibold">CONTACT US</a></li>
+              <li>
+                <a class="text-base mb-2 font-semibold bg-white text-color-prim"
+                  >FREE CONSULTATION</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex">
+            <button
+              class="btn bg-color-prim hover:bg-color-prim btn-md xl:btn-lg border-none text-white rounded-sm"
+            >
+              Free Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
