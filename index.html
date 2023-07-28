@@ -52,9 +52,9 @@
     </style>
   </head>
   <body>
-    <header class="md:container md:mx-auto px-5 md:px-10">
+    <header>
       <!-- NAVIGATION BAR -->
-      <nav class="w-full z-20 top-0 left-0">
+      <nav class="fixed w-full z-20 top-0 left-0 bg-white">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -335,8 +335,50 @@
       </nav>
 
       <!-- BANNER SECTION -->
+      <div class="md:container md:mx-auto px-5 md:px-10 mt-20">
+        <div class="relative flex flex-col items-center justify-center">
+          <!-- BANNER OVERLAY AND IMAGE -->
+          <div
+            class="absolute bg-gradient-to-t from-black opacity-80 h-full w-full rounded-3xl"
+          ></div>
+          <img
+            src="images/banner.png"
+            alt="Banner-Image"
+            class="w-full min-h-[300px] object-cover rounded-3xl"
+          />
+          <!-- BANNER CONTENT -->
+          <div class="absolute text-center text-white space-y-6">
+            <h1 class="font-bold text-[26px] md:text-5xl xl:text-7xl font-gara">
+              We Provide Effective<br />Legal Solutions
+            </h1>
+            <p class="font-normal text-sm lg:text-base text-[#E7E7E7]">
+              Unlocking the Path to Your Legal Triumphs<br />Where Effective
+              Solutions Meet Unwavering Advocacy
+            </p>
+
+            <form class="items-center hidden md:flex">
+              <label for="voice-search" class="sr-only">Search</label>
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="voice-search"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-color-prim focus:border-color-prim block w-full p-4 duration-200"
+                  placeholder="Search your services"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="inline-flex items-center py-4 px-6 ml-1.5 text-sm font-medium text-white bg-color-prim rounded-md border border-color-darkprim hover:bg-color-darkprim focus:ring-1 focus:outline-none focus:ring-color-darkprim duration-200"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="h-[1000px]"></main>
+    <main></main>
     <footer></footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
